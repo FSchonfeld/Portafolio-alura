@@ -1,0 +1,577 @@
+:root {
+    --cor-de-link: #000;
+}
+
+
+body {
+
+    font-family: 'Raleway';
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/* ----------- HEADER --------------------*/
+.menu-superior {
+    display: flex;
+    padding: 2% 10%;
+    padding-bottom: 32px;
+    font-size: 16px;
+}
+
+.menu-header {
+    display: flex;
+    gap: 275px;
+    align-items: center;
+
+}
+
+.nombre-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-header {
+    object-fit: contain;
+}
+
+.titulo-header {
+    font-weight: bold;
+    color: #464646;
+}
+
+.lista-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.lista-menu a {
+    color: #464646;
+}
+
+.lista-menu li:nth-child(6) {
+    font-weight: bold;
+}
+
+
+
+/*----------------- PRESENTACION ---------------------*/
+
+.presentacion {
+    display: flex;
+    padding-bottom: 32px;
+    align-items: center;
+    padding: 2% 10%;
+}
+
+.titulo-links-presentacion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.titulo-presentacion {
+    padding-bottom: 20px;
+
+}
+
+.texo-presentacion {
+    font-size: 16px;
+    color: #464646;
+}
+
+.texo-presentacion:first-child {
+    font-weight: bold;
+    font-size: 42px;
+    padding-bottom: 10px;
+
+
+}
+
+.lista-links {
+    display: flex;
+}
+
+.links-presentacion {
+    display: flex;
+    flex-direction: row;
+    gap: 25%;
+}
+
+.links-presentacion li {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.links-presentacion a {
+
+    color: #464646;
+}
+
+.arrow-presentacion {
+    object-fit: contain;
+}
+
+.imagen-presentacion {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+}
+
+
+
+
+/* --------------- SOBRE MI ---------------*/
+
+.sobremi {
+    background-color: rgba(234, 242, 253, 1);
+    padding-bottom: 32px;
+}
+
+.titulo-sobremi {
+    padding: 4% 10% 1% 10%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #464646;
+}
+
+.parrafos-sobremi {
+    padding: 0 10%;
+    color: #464646;
+    width: 100%;
+}
+
+.texto-sobremi {
+    padding-bottom: 15px;
+    width: 70%;
+}
+
+.img-sobremi {
+    width: 15%;
+    object-fit: contain;
+}
+
+
+
+/* --------------- SKILLS ---------------*/
+.skills {
+    padding: 2% 10%;
+    padding-bottom: 32px;
+}
+
+.titulo-skills {
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.cajas-skills {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.caja {
+    display: flex;
+    background-color: rgb(236, 232, 232);
+    flex-grow: 1;
+    flex-direction: column;
+    width: 176px;
+    height: 174px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-cajas-skills {
+    font-weight: bold;
+}
+
+.caja img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 25px;
+}
+
+
+
+
+/* --------------- Hobbies ---------------*/
+.hobbies {
+    padding: 2% 10%;
+    padding-bottom: 32px;
+}
+
+.titulo-hobbies {
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.cajas-hobbies {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.caja {
+    display: flex;
+    background-color: rgb(236, 232, 232);
+    flex-grow: 1;
+    flex-direction: column;
+    width: 176px;
+    height: 174px;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin: 25px;
+}
+@media(max-width: 834px) {
+    .menu-header {
+        gap: 500px;
+    }
+
+    .lista-menu li {
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .lista-menu li:nth-child(n+1):nth-child(-n+5) {
+        display: none;
+    }
+
+    .texto-sobremi {
+        width: 100%;
+    }
+
+    .cajas-skills,
+    .cajas-hobbies {
+        flex-wrap: wrap;
+    }
+
+    .cajas-formacion {
+        height: 118px;
+    }
+
+    .imagen-contacto {
+        display: none;
+    }
+
+
+}
+
+@media(max-width: 374px) {
+    .menu-superior {
+        font-size: 16px;
+    }
+
+    .menu-header {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .img-header {
+        object-fit: contain;
+        height: 16px;
+        width: 16px;
+    }
+
+    .lista-menu li:nth-child(6) {
+        font-weight: normal;
+    }
+
+
+    .presentacion {
+        flex-direction: column-reverse;
+
+    }
+
+    .imagen-presentacion {
+        justify-content: start;
+    }
+
+    .texo-presentacion:first-child {
+        font-weight: bold;
+        font-size: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .links-presentacion {
+        display: flex;
+        flex-direction: row;
+        gap: 1%;
+        font-weight: bold;
+    }
+
+
+    .titulo-sobremi {
+        padding: 4% 10% 5% 10%;
+        font-size: 32px;
+        font-weight: bold;
+        color: #464646;
+    }
+
+    .parrafos-sobremi {
+        padding: 0 10%;
+        color: #464646;
+        width: 100%;
+    }
+
+    .texto-sobremi {
+        padding-bottom: 15px;
+        width: 100%;
+    }
+
+    .img-sobremi {
+        width: 50%;
+        object-fit: contain;
+    }
+
+
+}
+/* --------------- Formacion academica ---------------*/
+
+.formacion {
+    padding: 2% 10%;
+    padding-bottom: 32px;
+    background-color: #EAF2FD;
+}
+
+.titulo-formacion {
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.cajas-formacion {
+    display: flex;
+    gap: 15px;
+    height: 300px;
+    padding-bottom: 15px;
+}
+
+.cajas-img {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-formacion {
+    width: 100%;
+    height: auto;
+}
+
+.texto-formacion {
+    display: flex;
+    gap: 15px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+
+}
+
+.texto1 {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+
+
+/* --------------- Experiencia profesional ---------------*/
+.exp-profesional {
+    padding: 2% 10%;
+    padding-bottom: 32px;
+}
+
+.titulo-exp {
+    display: flex;
+    font-size: 32px;
+    font-weight: bold;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.codigo-secreto {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+.codec-img {
+    width: 65%;
+}
+
+.codec-img img {
+    width: 100%;
+    height: auto;
+}
+
+.codsec-lanzador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.codsec-texto {
+    margin-bottom: 5%;
+}
+
+.codsec-texto h2 {
+    font-weight: bold;
+    margin-bottom: 4%;
+}
+
+.codsec-boton:first-child {
+    background-color: white;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.codsec-boton {
+    background-color: #2A7AE4;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.codsec-boton:hover {
+    background-color: greenyellow;
+    color: black;
+    border: 1px solid black;
+}
+
+.ahorcado {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+/*------------ Conctacto ----------------------*/
+
+.contacto {
+    padding: 2% 10%;
+    padding-bottom: 32px;
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen-contacto {
+    height: 100%;
+}
+
+.texto-contacto-container {
+    margin-left: 2%;
+
+
+}
+
+.texto-contacto {
+    margin-bottom: 5%;
+    height: auto;
+}
+
+.titulo-contacto {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 2%;
+
+}
+
+.form-contacto {
+    width: 100%;
+
+}
+
+.input-form {
+    width: 100%;
+    padding: 3%;
+    margin-bottom: 5%;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+
+.input-form:focus {
+    border: none;
+    border-bottom: 2px solid #2A7AE4;
+    outline: none;
+}
+
+
+#mensaje {
+    padding: 10%;
+
+}
+
+#mensaje::placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 15px;
+
+
+}
+
+.boton-submit {
+    background-color: #2A7AE4;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+/* - --------------- FOOTER ----------------*/
+.firma {
+    padding: 2% 10%;
+    padding-bottom: 32px;
+}
+
+.footer-texto {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
